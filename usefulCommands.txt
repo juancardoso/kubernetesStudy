@@ -1,0 +1,7 @@
+minikube logs --file=logs.txt
+kubectl apply -f ./nginx-kubernets.yaml
+kubectl get pods
+kubectl get deployment
+kubectl drain nginx (deletar pod)
+kubectl get services
+kubectl get nodes -o wide (obter IP interno do no)
