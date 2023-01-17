@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Statefulset
+kind: StatefulSet
 metadata:
   name: sistema-noticias-statefulset
 spec:
@@ -17,7 +17,7 @@ spec:
             - containerPort: 80
           envFrom:
             - configMapRef:
-              name: sistema-configmap
+                name: sistema-configmap
   selector:
     matchLabels:
       app: sistema-noticias
